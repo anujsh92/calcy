@@ -1,0 +1,509 @@
+
+
+
+/*************************** project Style ********************************/
+.project_container{
+    float: left;
+    width: 100%;
+    .project_title{
+        text-align: center;
+    }
+    .proj_user_slider_cnt {
+        float: left;
+        width: 20%;
+    }
+    .proj_pack_cnt {
+        float: left;
+        width: 80%;
+        .proj_pack {
+            float: left;
+            width: 200px;
+            text-align: center;
+            .proj_pack_title {
+                margin: 0px 10px;
+            }
+            .project_price {
+                .base_price_cont{
+                    margin: 0 10%;
+                    background: #176e61;
+                    color: #fff;
+                    width: 80%;
+                    clear: both;
+                    float: left;
+                    padding: 1rem 0;
+                    border-radius: 6rem;
+                    margin-bottom:1rem;
+                    text-align:center;
+                    font-size:1.5rem;
+                    .cad-sign{
+                        margin:0px;
+                        &:before {
+                            font-family: inherit;
+                            content: "CAD";
+                        }
+                        
+                    }
+                    .base_price{
+                        font-size:1.5rem;
+                        color:#FFF;
+                    }
+                    
+                }
+                .total_price_cont{
+                    margin: 0 10%;
+                    background: #176e61;
+                    color: #fff;
+                    width: 80%;
+                    clear: both;
+                    float: left;
+                    padding: 1rem 0;
+                    border-radius: 6rem;
+                    margin-bottom:1rem;
+                    text-align:center;
+                    font-size:1.5rem;
+                    display:none;
+                    .cad-sign{
+                        margin:0px;
+                        &:before {
+                            font-family: inherit;
+                            content: "CAD";
+                        }
+                    }
+                    .crt_valu{
+                        font-size:1.5rem;
+                        color:#FFF;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+.calc_function_cnt {
+    float: left;
+    width: 100%;
+    margin:0px;
+    clear:both;
+
+    .calc_function_title {
+        float: left;
+        width: 20%;
+        position: relative;
+    }
+    .funcPackIconCnt {
+        float: left;
+        width: 80%;
+
+        .funcPack {
+            float: left;
+            width: 12.5rem;
+            text-align: center;
+            i.fa-check-circle{
+                margin: 0;
+                font-size: 1.75rem;
+                line-height: 3rem;
+                color: #15463F;
+
+            }
+            i.fa-times{
+                margin: 0;
+                font-size: 1.75rem;
+                line-height: 3rem;
+                color: #CB5052;
+            } 
+            i.fa-plus{
+                margin: .5rem;
+                font-size: 20px;
+                line-height: 1.75rem;
+                color: #15463f;
+                background: #fff;
+                box-shadow: 0px 0px 2px #aaa;
+                width: 1.75rem;
+                height: 1.75rem;
+                border-radius: 10rem;
+            }
+            .iconedit_container_middel{
+                display:none;
+            }
+            .iconedit_container_bottom{
+                display:none;
+            }
+        }
+        .func_checked{
+            i.fa-check-circle{
+                margin: 0;
+                font-size: 1.75rem;
+                line-height: 3rem;
+                color: #15463F;
+                &:hover{
+                    margin: .5rem;
+                    font-size: 1.25rem;
+                    line-height: 1.875rem;
+                    color: #15463f;
+                    background: #fff;
+                    box-shadow: 0 0 0.125rem #aaa;
+                    width: 1.875rem;
+                    height: 1.875rem;
+                    border-radius: 10rem;
+                    &:before{
+                    content: "\f068";
+                    }
+                }
+                
+           }
+        }
+    }
+    .calc_function_title{
+        position:relative;
+        h3 {
+            padding: 0px 0px 0px 24px;
+            font-size: 17px;
+            float: left;
+            width: auto;
+        }
+        .icon_info {
+            float: left;
+            width: 10px;
+            position: absolute;
+            display: inline;
+            top: 0;
+            z-index: 999;
+            .info_container{
+                display: none;
+                position: fixed;
+                top: 33%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+                padding: 20px;
+                z-index: 999;
+                background: #ffffff;
+            }
+        }
+    }
+}
+.pack_bottom_right{
+    
+}
+.pack_bottom_container{
+    float:left;
+    width:100%;
+    margin: 2rem 0; 
+    .pack_bottom_left{
+        float:left;
+        width:20%;
+    }
+    .pack_bottom_right{
+        float:left;
+        width:80%;
+        .pack_bottom{
+            float:left;
+            width:15rem;
+            text-align:center;
+            .pack_bottom_text {
+                clear: both;
+                float: left;
+                text-align:center;
+            }
+            .clcwhite_bg_button {
+                display: inline-block;
+                margin-bottom: 0;
+                font-weight: 400;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                border: 1px solid #e20074;
+                white-space: nowrap;
+                padding: 6px 12px;
+                color: #e20074;
+                font-size: 1rem;
+                line-height: 1.42857143;
+                border-radius: 4px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                transition: all .3s ease;
+                text-decoration: none;
+                width:80%;
+                &:hover{
+                    background: #e20074;
+                    color: #fff;
+                }
+            }
+            .clcgray_bg_button {
+                display: inline-block;
+                margin-bottom: 0;
+                font-weight: 400;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                border: 1px solid #e20074;
+                white-space: nowrap;
+                padding: 6px 12px;
+                color: #fff;
+                background: #e20074;
+                font-size: 1rem;
+                line-height: 1.42857143;
+                border-radius: 4px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                transition: all .3s ease;
+                text-decoration: none;
+                width:80%;
+                &:hover{
+                    color: #e20074;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+.backgroundOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333333;
+    opacity: .5;
+    z-index: 29;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/************************************ Tab Css *******************************/
+.nav-tabs{
+	float: left;
+	width: 100%;
+	margin: 0px;
+	list-style: none;
+	border-bottom: 1px solid #ddd;
+    li{
+        float: left;
+        margin-bottom: -1px;
+        a {
+            margin-right: -1px;
+            padding: 0.94rem 1.56rem;
+            border: 1px solid #ddd;
+            border-radius: 0px 1px 0px 0px;
+            float: left;
+            color: #939393;
+            text-decoration: none;
+            font-size: 1rem;
+            background: #e5e5e5;
+            font-weight: bold;
+        }
+    }
+}
+
+.nav-tabs li.active a{
+	color: #333333;
+	background: #F1F1F1;
+	border-color: #ddd #ddd #F1F1F1;
+}
+.nav-tabs li a:hover{
+	
+}
+.nav-tabs li.active a
+.nav-tabs li.active a:hover
+.nav-tabs li.active a:focus{
+	color:#555;
+	cursor: default;
+	background-color: #F1F1F1;
+	border:1px solid #ddd;
+	border-bottom-color: transparent;
+}
+.tab-content .tab-pane{
+	float:left;
+	width: 96%;
+	display: none;
+}
+.tab-content .tab-pane.active{
+	display: block;
+	padding: 2%;
+	background-color: #F1F1F1;
+}
+.clear{
+	float: left;
+	width: 100%;
+	margin-bottom: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+/************** Accordion CSS *********************************/
+
+
+.accordionWrapper {
+    padding: 0px;
+    background: #fff;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1.8rem auto 0px;
+    box-shadow: 0px 0px 0px;
+    .accordionItem{
+        float:left;
+        display:block;
+        width:100%;
+        box-sizing: border-box;
+        font-family:'Open-sans',Arial,sans-serif;
+        .accordionItemHeading{
+            cursor:pointer;
+            margin:0px 0px 0.8rem;
+            padding:.8rem 0px;
+            background:#F2F2F2;
+            color:#545B5E;
+            width:100%;
+            box-sizing: border-box;
+            border-radius: 0.8rem;
+            font-size: 1.2rem;
+            height:3.2rem;
+            .group_left{
+                float: left;
+                width:20%;
+                h3{
+                    float:left;
+                    font-size: 1.1rem;
+                    margin-left: 1rem;
+                    font-weight:bold;
+                }
+
+            }
+            .group_right{
+                float: left;
+                width:80%;
+                .group_count{
+                    float:left;
+                    text-align:center;
+                    margin:0;
+                    padding:0;
+                    font-size:1.1rem;
+                }
+            }
+        }
+    }
+}
+.close .accordionItemContent{
+    height:0px;
+    transition:height 1s ease-out;
+    -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    float:left;
+    display:block;
+    
+    
+}
+.open .accordionItemContent{
+    padding: 0px 0px 1.2rem;
+    background-color: #fff;
+    border: 0px none;
+    width: 100%;
+    margin: 0px 0px 0.8rem;
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease;
+    -ms-transition: -ms-transform 0.4s ease;
+    transition: transform 0.4s ease;
+        box-sizing: border-box;
+}
+
+.open .accordionItemHeading{
+    margin:0px;
+    background-color: #F2F2F2;
+    color: #545B5E;
+    border-radius: 0.8rem;    
+    
+}
+
+
+
+/************************** User Range Slider ********************************/
+
+.proj_user_slider_cnt .slidecontainer {
+    width: 100%;
+}
+
+.proj_user_slider_cnt .r_slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #89B0AB;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    padding: 0px;  
+    border: 0px none; 
+}
+
+.proj_user_slider_cnt .r_slider:hover {
+    opacity: 1;
+}
+
+.proj_user_slider_cnt .r_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #0B211F;
+    cursor: pointer;
+    content: 'dsdf';
+    color: #fff;
+}
+
+.proj_user_slider_cnt .r_slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #0B211F;
+    cursor: pointer;
+    z-index: 999;
+}
+.r_slidecontainer{
+    position: relative;
+    output {
+        margin-bottom: 0;
+        padding: .5em;
+        background: 0 0;
+        color: inherit;
+        bottom: 0;
+        margin-left: 0px;
+        -moz-user-select: -moz-none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: inline;
+    }
+}
+
+
+
+
+
